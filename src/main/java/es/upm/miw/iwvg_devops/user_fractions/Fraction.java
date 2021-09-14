@@ -97,19 +97,9 @@ public class Fraction implements Comparable<Fraction> {
     }
 
     public void reduceToCommonDenominator(Fraction fraction) {
-        int leastCommonMultiple = this.leastCommonMultiple(this.denominator, fraction.getDenominator());
+        int leastCommonMultiple = new MyMath().leastCommonMultiple(this.denominator, fraction.getDenominator());
         this.changeDenominator(leastCommonMultiple);
         fraction.changeDenominator(leastCommonMultiple);
-    }
-
-    private int leastCommonMultiple(int a, int b) {
-        return (a / this.greatestCommonDivisor(a, b)) * b;
-    }
-
-    private int greatestCommonDivisor(int a, int b) {
-        if (a == 0)
-            return b;
-        return greatestCommonDivisor(b % a, a);
     }
 
     public Fraction multiply(Fraction fraction) {
@@ -121,14 +111,8 @@ public class Fraction implements Comparable<Fraction> {
     }
 
     @Override
-    public int compareTo(Fraction o) {
-        if (this.decimal() < o.decimal()) {
-            return -1;
-        } else if (this.decimal() == o.decimal()) {
-            return 0;
-        } else {
-            return 1;
-        }
+    public int compareTo(Fraction fraction) {
+        return Double.compare(this.decimal(), fraction.decimal());
     }
 
     @Override
