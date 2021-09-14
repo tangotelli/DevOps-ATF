@@ -51,7 +51,7 @@ class SearchesTest {
     }
 
     void testFindFractionSubtractionByUserName() {
-        //menudas cosas
+        //pues ni uno ni otro chaval jeje
     }
 
     void testFindFractionMultiplicationByUserFamilyName() {
