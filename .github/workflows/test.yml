@@ -19,7 +19,7 @@ jobs:
         run: >
           mvn -B verify -DskipTests sonar:sonar
           -Dsonar.projectKey=tangotelli_DevOps-ATF
-          -Dsonar.organization=Álvaro Tango Fernández
+          -Dsonar.organization=AlvaroTangoFernandez
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.login=$SONAR_TOKEN
         env:
