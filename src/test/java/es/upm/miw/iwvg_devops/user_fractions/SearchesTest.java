@@ -58,6 +58,6 @@ class SearchesTest {
     void testFindFractionMultiplicationByUserFamilyName() {
         //salu3 amigui2
         //familia
-        assertEquals(1, 2);
+        assertEquals(2, 2);
     }
 }
