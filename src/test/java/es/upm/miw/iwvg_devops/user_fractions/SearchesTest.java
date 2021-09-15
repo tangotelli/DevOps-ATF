@@ -54,6 +54,7 @@ class SearchesTest {
         //pues ni uno ni otro chaval jeje
     }
 
+    @Test
     void testFindFractionMultiplicationByUserFamilyName() {
         //salu3 amigui2
         //familia
