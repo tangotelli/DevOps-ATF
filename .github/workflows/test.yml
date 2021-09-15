@@ -16,10 +16,10 @@ jobs:
         run: mvn -B verify # -B: --batch-mode
       - name: Sonar
         if: success() # always() failure() success()
-        run: >
+        run: > # organization == sonar.organization key
           mvn -B verify -DskipTests sonar:sonar
           -Dsonar.projectKey=tangotelli_DevOps-ATF
-          -Dsonar.organization=AlvaroTangoFernandez
+          -Dsonar.organization=tangotelli
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.login=$SONAR_TOKEN
         env:
