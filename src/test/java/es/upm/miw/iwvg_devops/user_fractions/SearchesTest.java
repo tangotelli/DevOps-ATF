@@ -51,8 +51,13 @@ class SearchesTest {
     }
 
     void testFindFractionSubtractionByUserName() {
+        //pues ni uno ni otro chaval jeje
     }
 
+    @Test
     void testFindFractionMultiplicationByUserFamilyName() {
+        //salu3 amigui2
+        //familia
+        assertEquals(2, 2);
     }
 }
