@@ -126,5 +126,6 @@ public class Fraction implements Comparable<Fraction> {
     @Override
     public int hashCode() {
         return Objects.hash(numerator, denominator);
+        // un cambio
     }
 }
